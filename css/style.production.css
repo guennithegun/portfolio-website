@@ -50,25 +50,6 @@ a {
   font-size: 10px;
 }
 
-button {
-  background-color: #f27578;
-  display: inline-block;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
-  font-family: inherit;
-  text-decoration: none;
-  -webkit-transition: 0.2s -webkit-box-shadow;
-  transition: 0.2s -webkit-box-shadow;
-  -o-transition: 0.2s box-shadow;
-  transition: 0.2s box-shadow;
-  transition: 0.2s box-shadow, 0.2s -webkit-box-shadow;
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;;
-}
-
 .button {
   background-color: #f27578;
   display: inline-block;
@@ -88,8 +69,6 @@ button {
   transition: 0.2s opacity;;
 }
 
-button:hover,
-button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;

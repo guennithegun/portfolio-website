@@ -63,7 +63,6 @@ a {
   font-size: 10px;
 }
 
-button,
 .button {
   background-color: var(--primary-color);
   display: inline-block;
@@ -77,8 +76,6 @@ button,
   transition: 0.2s opacity;;
 }
 
-button:hover,
-button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;
