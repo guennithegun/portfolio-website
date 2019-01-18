@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+  <!-- HEAD -->
+  <header class="page-header">
+    <!-- Add Logo here -->
+    <img src="img/logo.png" class="page-header__item" alt="My Logo. Three dots in purple, gray and lightblue. Under them my name Günther von Häfen. Under my name with smaller font site my main skills web developing, data science and legal.">
+    <nav role="menubar" class="page-header__item navigation-list">
+      <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+      <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+      <div class="dropdown">
+        <button class="dropbtn">Contact &dArr;
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CONTENT -->
+  <div class="contact">
+    <!-- MAIN -->
+    <div>
+      <h1>Contact</h1>
+      <div>
+        Hinter der Lieth 26c<br>
+        22529 Hamburg<br>
+        Germany<br>
+        <br>
+        Phone: <a href="tel:+4917670387819">+49 176 703 878 19</a><br>
+        E-mail: <a href="mailto:hello@guenther-vonhaefen.de">hello@guenther-vonhaefen.de</a>
+      </div>
+      <br>
+      <a href="mailto:hello@guenther-vonhaefen.de" class="button">Contact me</a>
+      <!-- Contact Form -->
+      <p>Or simply use my contact form!</p>
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="email">E-mail: </label>
+        <input type="email" id="email"required placeholder="Your E-Mail">
+        <br><br>
+        <label class="standard-label" for="telephone">Phone: </label>
+        <input type="tel" id="telephone" placeholder="Your Phonenumber">
+        <br><br>
+        <label class="standard-label" for="message">Message: </label>
+        <br>
+        <textarea id="message" required placeholder="Your Message"></textarea>
+
+        <input type="submit" value="Send message" class="button">
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <footer class="contact__footer">
+      <p>Find me on</p>
+      <a href="https://github.com/guennithegun?tab=repositories" target="_blank"><img src="img/iconfinder_mark-github_298822.svg" style="width:32px" alt="Github Logo"></a>
+      <a href="https://www.linkedin.com/in/g%C3%BCnther-von-h%C3%A4fen-8a8494175/" target="_blank"><img src="img/iconfinder_11-linkedin_104493.svg" style="width:32px" alt="LinkedIn Logo"></a>
+      <a href="https://twitter.com/GuntherHafen" target="_blank"><img src="img/iconfinder_03-twitter_104501.svg" style="width:32px" alt="Twitter Logo"></a>
+      <a href="https://www.xing.com/profile/Guenther_vonHaefen/cv" target="_blank"><img src="img/iconfinder_xing-square_1608452.svg" style="width:32px" alt="Xing Logo"></a>
+    </footer>
+  </div>
+  <!-- tota11y -->
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>

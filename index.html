@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World!</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+  <!-- HEAD -->
+  <header class="page-header">
+    <!-- Add Logo here -->
+    <img src="img/logo.png" class="page-header__item" alt="My Logo. Three dots in purple, gray and lightblue. Under them my name Günther von Häfen. Under my name with smaller font site my main skills web developing, data science and legal.">
+    <nav role="menubar" class="page-header__item navigation-list">
+      <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+      <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+      <div class="dropdown">
+        <button class="dropbtn">Home &dArr;
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="work.html">Work</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CONTENT -->
+  <div class="profile">
+    <!-- MAIN -->
+    <div class="wrapper">
+      <!-- Portrait Image -->
+      <img src="img/HerrVonHaefen2.jpg" class="profile__portrait bounceInLeft" alt="Picture of me wearing a suit with a smile. It is in black and white.">
+      <!-- Profile Text -->
+      <div class="profile__text bounceInRight">
+        <h1>Hello World!</h1>
+        <p>
+          My name is Günther von Häfen.<br>
+          <br>
+          I am a <span>&lsaquo;web&rsaquo;</span> developer from Hamburg. I have a legal background (Volljurist) and I am also interested in Data Science.
+        </p>
+        <div class="profile__text--buttons">
+          <a href="work.html" class="button">Show me some code</a>
+          <a href="mailto:hello@guenther-vonhaefen.de" class="button">Contact me</a>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="profile__footer">
+      <p>Find me on</p>
+      <a href="https://github.com/guennithegun?tab=repositories" target="_blank"><img src="img/iconfinder_mark-github_298822.svg" style="width:32px" alt="Github Logo"></a>
+      <a href="https://www.linkedin.com/in/g%C3%BCnther-von-h%C3%A4fen-8a8494175/" target="_blank"><img src="img/iconfinder_11-linkedin_104493.svg" style="width:32px" alt="LinkedIn Logo"></a>
+      <a href="https://twitter.com/GuntherHafen" target="_blank"><img src="img/iconfinder_03-twitter_104501.svg" style="width:32px" alt="Twitter Logo"></a>
+      <a href="https://www.xing.com/profile/Guenther_vonHaefen/cv" target="_blank"><img src="img/iconfinder_xing-square_1608452.svg" style="width:32px" alt="Xing Logo"></a>
+    </footer>
+  </div>
+  <!-- tota11y -->
+  <script src="js/tota11y.min.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
+</body>
+</html>
