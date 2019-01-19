@@ -1,15 +1,15 @@
 /* Colors used
 
 Text Color (Dark Gray): #2b2b2b;
-Primary Color (begonia): #f27578;
-Secondary Color (purple): #9d79e5;
-Tertiary Color (light purple): #CDBCF2;
+Primary Color (Begonia): #f27578;
+Secondary Color (Purple): #9d79e5;
+Tertiary Color (Light purple): #CDBCF2;
 */
 
 :root {
   --primary-color: #f27578;
   --secondary-color: #9d79e5;
-  --tertiary-color: #CDBCF2;
+  --tertiary-color: #cdbcf2;
   --text-color: #2b2b2b;
   --font-size-basic: 16px;
   --font-size-h1: 36px;
@@ -72,14 +72,13 @@ a {
   padding: 10px;
   font-family: inherit;
   text-decoration: none;
-  transition: 0.2s box-shadow;
-  transition: 0.2s opacity;;
+  transition: box-shadow 0.2s, opacity 0.2s;
 }
 
 .button:hover,
 .button:focus {
   cursor: pointer;
-  box-shadow: 5px 5px 18px #888888;
+  box-shadow: 5px 5px 18px #888;
   opacity: 0.8;
 }
 
@@ -110,14 +109,15 @@ a {
 .navigation-list__item {
   display: inline-block;
   margin: 0;
-  width:20%;
-  padding: .2rem 0;
+  width: 20%;
+  padding: 0.2rem 0;
   text-decoration: none;
   text-align: center;
   color: var(--text-color);
 }
 
-.navigation-list__item:before, .navigation-list__item:after {
+.navigation-list__item::before,
+.navigation-list__item::after {
   position: absolute;
   top: 17px;
   left: 50%;
@@ -133,17 +133,17 @@ a {
   z-index: -1;
 }
 
-.navigation-list__item:after {
+.navigation-list__item::after {
   border-width: 2px;
   transition: all 0.4s;
 }
 
-.navigation-list__item:hover:before {
+.navigation-list__item:hover::before {
   opacity: 1;
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-.navigation-list__item:hover:after {
+.navigation-list__item:hover::after {
   opacity: 1;
   transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
@@ -159,7 +159,7 @@ a {
   position: absolute;
   background-color: #f9f9f9;
   max-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -190,7 +190,7 @@ a {
   margin-right: 40px;
   margin-bottom: 40px;
   border-radius: 50%;
-  box-shadow: 5px 5px 18px #888888;
+  box-shadow: 5px 5px 18px #888;
 }
 
 .profile__text {
@@ -220,7 +220,7 @@ a {
 
 .about__table th {
   text-align: center;
-  border-bottom: 1px solid var(--tertiary-color)
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .harbour {
@@ -234,8 +234,8 @@ a {
 }
 
 #message {
-  width:100%;
-  height:150px;
+  width: 100%;
+  height: 150px;
 }
 
 .work {
@@ -251,17 +251,18 @@ footer {
 
 .cv {
   text-align: center;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
 /* Grid Layout for work.html */
+
 /* Fallback Grid */
 .project-list__item {
   display: inline-block;
   width: 33%;
 }
 
-/* Styling CSS grid*/
+/* Styling CSS grid */
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -273,7 +274,7 @@ footer {
   border-radius: 3px;
   padding: 10px;
   width: auto;
-  box-shadow: 5px 5px 18px #888888;
+  box-shadow: 5px 5px 18px #888;
   position: relative;
 }
 
@@ -289,17 +290,19 @@ footer {
 
 @keyframes crane-move {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
+
   to {
-    transform: translate(-800px, 0px);
+    transform: translate(-800px, 0);
   }
 }
 
 @keyframes ship-move {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
+
   to {
     transform: translate(2500px, 800px);
   }
@@ -307,8 +310,9 @@ footer {
 
 @keyframes cloud-left-move {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
+
   to {
     transform: translate(2500px, 800px);
   }
@@ -316,8 +320,9 @@ footer {
 
 @keyframes cloud-top-move {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
+
   to {
     transform: translate(2500px, -600px);
   }
@@ -325,10 +330,11 @@ footer {
 
 @keyframes cloud-right-move {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
+
   to {
-    transform: translate(-5000px, 0px);
+    transform: translate(-5000px, 0);
   }
 }
 
@@ -409,7 +415,7 @@ footer {
 }
 
 .bounceInRight {
-  animation: .5s bounceInRight;
+  animation: 0.5s bounceInRight;
 }
 
 .bounceInLeft {
@@ -462,7 +468,10 @@ footer {
     font-size: 16px;
   }
 
-  .about, .contact, .profile, .work {
+  .about,
+  .contact,
+  .profile,
+  .work {
     padding: 10px;
   }
 
@@ -475,7 +484,7 @@ footer {
   }
 
   .profile__portrait {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .navigation-list__item {
@@ -496,7 +505,10 @@ footer {
     display: block;
   }
 
-  .profile, .contact, .about, .work {
+  .profile,
+  .contact,
+  .about,
+  .work {
     margin-top: 25px;
   }
 
