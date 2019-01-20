@@ -184,7 +184,6 @@ a {
 }
 
 .profile__portrait {
-  float: left;
   width: 100%;
   max-width: 250px;
   margin-right: 40px;
@@ -247,6 +246,10 @@ footer {
   clear: both;
   text-align: center;
   margin-top: 100px;
+}
+
+.socialMlogos {
+  width: 32px;
 }
 
 .cv {
@@ -468,13 +471,6 @@ footer {
     font-size: 16px;
   }
 
-  .about,
-  .contact,
-  .profile,
-  .work {
-    padding: 10px;
-  }
-
   .profile__text--buttons {
     text-align: center;
   }
@@ -510,6 +506,7 @@ footer {
   .about,
   .work {
     margin-top: 25px;
+    padding: 0 10px;
   }
 
   .about__table {

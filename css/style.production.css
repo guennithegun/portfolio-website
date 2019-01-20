@@ -290,6 +290,10 @@ footer {
   margin-top: 100px;
 }
 
+.socialMlogos {
+  width: 32px;
+}
+
 .cv {
   text-align: center;
   margin: 50px 0;
@@ -708,6 +712,7 @@ footer {
   .about,
   .work {
     margin-top: 25px;
+    padding: 0 10px;
   }
 
   .about__table {
