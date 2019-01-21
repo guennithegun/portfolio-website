@@ -481,6 +481,7 @@ footer {
 
   .profile__portrait {
     margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -519,5 +520,9 @@ footer {
   .project-list__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .profile__portrait {
+    margin: 0 20px 40px;
   }
 }
