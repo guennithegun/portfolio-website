@@ -689,7 +689,7 @@ footer {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .page-header {
     padding-top: 0;
   }
