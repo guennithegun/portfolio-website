@@ -268,8 +268,8 @@ footer {
 /* Styling CSS grid */
 .project-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
 
 .project-list__item {
@@ -512,16 +512,6 @@ footer {
 }
 
 @media all and (min-width: 501px) and (max-width: 700px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-
-  .project-list__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
   .profile__portrait {
     margin: 0 20px 40px;
   }

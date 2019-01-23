@@ -310,9 +310,9 @@ footer {
 .project-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  -ms-grid-columns: 1fr 15px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
 
 .project-list__item {
@@ -717,17 +717,6 @@ footer {
 }
 
 @media all and (min-width: 501px) and (max-width: 700px) {
-  .project-list {
-    -ms-grid-columns: 1fr 10px 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-
-  .project-list__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
   .profile__portrait {
     margin: 0 20px 40px;
   }
