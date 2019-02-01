@@ -50,17 +50,22 @@
       <!-- Contact Form -->
       <p>Or simply use my contact form!</p>
       <form action="#" method="post" id="contact-form">
-        <label class="standard-label" for="email">E-mail<span class="hint">(required)</span>: </label>
-        <input type="email" id="email" required placeholder="example@mail.com">
-        <br><br>
-        <label class="standard-label" for="telephone">Phone: </label>
-        <input type="tel" id="telephone" placeholder="+49 171 12345678">
-        <br><br>
-        <label class="standard-label" for="message">Message<span class="hint">(required)</span>: </label>
+        <div class="input-wrapper">
+          <label class="standard-label" for="email">E-mail: </label>
+          <input type="email" id="email" required placeholder="example@mail.com">
+        </div>
         <br>
-        <textarea id="message" required placeholder="Sorry! The contact form is currently under construction. Functionality will be added soon. Please click Contact Me button. Thanks!"></textarea>
-
-        <input type="submit" value="Send message" class="button" onclick="alert('Sorry! The contact form is still under construction. Functionality will be added soon. Please click Contact Me button. Thanks!')">
+        <div class="input-wrapper">
+          <label class="standard-label" for="telephone">Phone: </label>
+          <input type="tel" id="telephone" placeholder="017112345678">
+        </div>
+        <br>
+        <div class="input-wrapper">
+          <label class="standard-label" for="message">Message<span class="hint">(required)</span>: </label>
+          <br>
+          <textarea id="message" required placeholder="Sorry! The contact form is currently under construction. Functionality will be added soon. Please click Contact Me button. Thanks!"></textarea>
+        </div>
+        <input type="submit" value="Send message" class="button">
       </form>
     </div>
     <!-- FOOTER -->
@@ -74,5 +79,8 @@
       <a href="impressum.html" class="hint">Impressum/Datenschutzerklärung</a>
     </footer>
   </div>
+
+  <!-- JAVA SCRIPT -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
