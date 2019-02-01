@@ -278,6 +278,11 @@ a {
   height: 150px;
 }
 
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+
 .work {
   max-width: 700px;
   margin: 100px auto;
