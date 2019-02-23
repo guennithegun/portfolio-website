@@ -61,6 +61,7 @@ a {
   text-decoration: none;
   -webkit-transition: opacity 0.2s, -webkit-box-shadow 0.2s;
   transition: opacity 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s, opacity 0.2s;
   transition: box-shadow 0.2s, opacity 0.2s;
   transition: box-shadow 0.2s, opacity 0.2s, -webkit-box-shadow 0.2s;
 }
@@ -315,27 +316,164 @@ footer {
 .project-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 15px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
 }
 
 .project-list__item {
-  background-color: #f9f9f9;
-  border-radius: 3px;
-  padding: 10px;
   width: auto;
-  -webkit-box-shadow: 5px 5px 18px #888;
-  box-shadow: 5px 5px 18px #888;
-  position: relative;
+  height: 300px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 
-.project-list__item--button {
+.project-list__item.hover .project-list__item--inner {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.project-list__item--inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.project-list__item--front,
+.project-list__item--back {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-list__item--front {
+  color: white;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
-.project-list__item:last-child {
-  background-color: #cdbcf2;
+.project-list__item--back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background-color: white;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.project-list__item--back span {
+  background-color: #49dcb1;
+  font-size: 12px;
+  display: inline-block;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.project-list__item--back p {
+  margin: 0;
+}
+
+.project-list__item--button {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.frontButton {
+  background-color: transparent;
+  width: auto;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+.backButton {
+  background-color: transparent;
+  font-size: 20px;
+  width: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+}
+
+.blue {
+  background-color: #006494;
+}
+
+.black {
+  background-color: black;
+  color: #f9c22e;
+}
+
+.purple {
+  background-color: #ce84ad;
+}
+
+.green {
+  background-color: #5fad56;
+}
+
+.rose {
+  background-color: #b4436c;
+}
+
+.spring {
+  background-color: #c3e991;
+}
+
+.red {
+  background-color: #df3b57;
+}
+
+.sunny {
+  background-color: #470ff4;
 }
 
 /* Keyframes */
@@ -661,6 +799,10 @@ footer {
     grid-row: auto / auto;
   }
 
+  .project-list__item--front h2 {
+    font-size: 30px;
+  }
+
   h1 {
     font-size: 24px;
     text-align: center;
@@ -672,13 +814,6 @@ footer {
 
   h3 {
     font-size: 16px;
-  }
-
-  .about,
-  .contact,
-  .profile,
-  .work {
-    padding: 10px;
   }
 
   .profile__text--buttons {
@@ -693,6 +828,10 @@ footer {
     margin-right: 0;
     margin-bottom: 40px;
   }
+
+  .project-list__item--back span {
+    font-size: 16px;
+  }
 }
 
 @media all and (max-width: 700px) {
@@ -703,7 +842,7 @@ footer {
   .navigation-list__item {
     display: none;
   }
-
+  
   .dropbtn {
     display: block;
   }
@@ -724,5 +863,12 @@ footer {
 @media all and (min-width: 501px) and (max-width: 700px) {
   .profile__portrait {
     margin: 0 20px 40px;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 600px) {
+  .project-list {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
