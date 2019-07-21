@@ -10,18 +10,25 @@
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <body>
+  <div class="page__background"></div>
   <!-- HEAD -->
   <header class="page-header">
-    <!-- Add Logo here -->
-    <img src="img/logo.png" class="page-header__item" alt="My Logo. Three dots in purple, gray and lightblue. Under them my name Günther von Häfen. Under my name with smaller font site my main skills web developing, data science and legal.">
+    <!-- Logo Section -->
+    <!-- <img src="img/logo.png" class="page-header__item" alt="My Logo. Three dots in purple, gray and lightblue. Under them my name Günther von Häfen. Under my name with smaller font site my main skills web developing, data science and legal."> -->
+    <div class="page-header__item">
+      <img src="img/webdev.png" alt="Web Developing Logo" class="page-header__item--logo"><span>LOVING</span>
+      <img src="img/barplot.png" alt="Data Science Logo: Bar Plot" class="page-header__item--logo"><span>CODE</span>
+      <img src="img/legal.png" alt="Legal Logo: Scale" class="page-header__item--logo">
+    </div>
+    <!-- Nav Section -->
     <nav role="navigation" class="page-header__item navigation-list">
       <a href="index.html" class="navigation-list__item">Home</a>
       <a href="about.html" class="navigation-list__item">About</a>
       <a href="contact.html" class="navigation-list__item">Contact</a>
       <a href="work.html" class="navigation-list__item">Work</a>
       <div class="dropdown">
-        <button class="dropbtn button">Home &dArr;
-          <i class="fa fa-caret-down"></i>
+        <button class="dropbtn">Home<span>&dArr;</span>
+          <i class="fa fa-caret-down"></i> <!-- DELETE in any site -->
         </button>
         <div class="dropdown-content">
           <a href="about.html">About</a>
@@ -44,7 +51,7 @@
         <p>
           His name is Günther von Häfen.<br>
           <br>
-          He is a <span>&lsaquo;web&rsaquo;</span> developer from Hamburg with a legal background (Volljurist) and curiosity for Data Science.
+          He is a <span><span id="carrot">&lt;/</span>web<span id="carrot">&gt;</span></span> developer from Hamburg with a legal background (Volljurist) and curiosity for Data Science.
         </p>
         <div class="profile__text--buttons">
           <a href="work.html" class="button">Show me some code</a>
