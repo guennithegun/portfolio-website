@@ -628,6 +628,33 @@ footer {
   background-size: cover;
 }
 
+.quizzApp {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 88, 0.6)), to(rgba(59, 59, 88, 0.6))), url("../img/wnba.png");
+  background: -webkit-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/quizzApp.png");
+  background: -o-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/quizzApp.png");
+  background: linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/quizzApp.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.todoApp {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 88, 0.6)), to(rgba(59, 59, 88, 0.6))), url("../img/wnba.png");
+  background: -webkit-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/todoApp.png");
+  background: -o-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/todoApp.png");
+  background: linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/todoApp.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.popCorn {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 88, 0.6)), to(rgba(59, 59, 88, 0.6))), url("../img/wnba.png");
+  background: -webkit-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/popCorn.png");
+  background: -o-linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/popCorn.png");
+  background: linear-gradient(rgba(59, 59, 88, 0.6), rgba(59, 59, 88, 0.6)), url("../img/popCorn.png");
+  background-position: center;
+  background-size: cover;
+}
+
 /* Keyframes */
 
 @-webkit-keyframes crane-move {
